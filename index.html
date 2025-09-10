@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Praticando!</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Praticando Pseudo-Elementos</h1>
+            <h2>Estados (Interação)</h2>                 <!--Barra de Navegação-->           
+                <nav class="interacao">
+                    <a href="#hover">:hover</a>
+                    <a href="#focus">:focus</a>
+                    <a href="#active">:active</a>
+                </nav>
+
+            <h2>Posições (Estruturais)</h2>
+                <nav class="estruturais">
+                    <a href="#first-child_last-child">:first-child</a>
+                    <a href="#first-child_last-child">:last-child</a>
+                    <a href="#nth-child">:nth-child(odd)</a>
+                    <a href="#nth-child">:nth-child(even)</a>
+                    <a href="#nth-child">:nth-child(3n)</a>
+                </nav>
+
+            <h2>Formulários</h2>
+                <nav class="formulario">
+                    <a href="#valid_invalid">:valid</a>
+                    <a href="#valid_invalid">:invalid</a>
+                </nav>
+    </header>
+
+    <main>
+        <section class="sec">
+            <h2 id="hover">:hover</h2>                  <!--EXEMPLO HOVER-->
+                
+                <p>
+                    Vamos mostrar exemplos de <strong>:hover</strong> (passe o mouse por cima)
+                </p>
+
+                    <div class="exemplo_hover">
+                        <img src="assets/hover.jpeg" alt=""><br>
+                        <a href="#">Passe o Mouse aqui!</a>
+                    </div>
+        </section>
+
+        <section class="sec">                                      <!--EXEMPLO FOCUS-->
+            <h2 id="focus">:focus</h2>
+
+                <p>
+                    Vamos mostrar exemplos de <strong>:focus</strong> (elemento selecionado)
+                </p>
+
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" name="password" id="senha" placeholder="Digite aqui">
+                </form>
+        </section>
+
+        <section class="sec">                                      <!--EXEMPLO ACTIVE-->
+            <h2 id="active">:active</h2>
+                <p>
+                    Vamos mostrar exemplo de <strong>:active</strong> (elemento sendo clicado)
+                </p>
+
+                <button type="button">Clique aqui!</button>
+        </section>
+        
+        <section class="child">                                     <!--EXEMPLO FIRST-CHILD | LAST-CHILD-->
+            <h2 id="first-child_last-child">:first-child | :last-child</h2>
+
+                <p>
+                    Vamos mostrar exemplo de <strong>:first-child | :last-child</strong> (primeiro filho e ultimo filho)
+                </p>
+                
+                    <ul class="fist-last-child">
+                        <li>Primeiro</li>
+                        <li>Meio</li>
+                        <li>Meio</li>
+                        <li>Ultimo</li>
+                    </ul>
+        </section>
+        
+        <section class="child">                                   <!--EXEMPLO NTH-CHILD()-->
+            <h2 id="nth-child">:nth-child(odd) | nth-child(even) | nth-child(3n)</h2>
+                <p>
+                    Vamos mostrar todos os exemplos de <strong>:nth-child</strong>
+                </p>
+
+                    <ul class="nth-child">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
+        </section>
+        
+        <section class="valid_invalid">                          <!--EXEMPLO VALID | INVALID-->
+            <h2 id="valid_invalid">:valid | :invalid</h2>
+                <p>
+                    Vamos mostrar exemplos de <strong>:valid | :invalid</strong>
+                </p>
+
+                <form>
+                    <fieldset>
+                        <legend>
+                            :valid | :invalid
+                        </legend>
+                            <label for="name">Nome</label><br>
+                            <input 
+                                type="text" 
+                                name="nome" 
+                                id="nome" 
+                                placeholder="Digite aqui"
+                            ><br>
+
+                            <label for="num">Contato</label><br>
+                            <input 
+                                type="tel" 
+                                name="numero" 
+                                id="num"
+                                placeholder="Digite aqui" 
+                                title="Digite no formato: +99 (99)9 9999-9999"
+                                pattern="0-9"
+                                maxlength="9"
+                                required
+                            ><br>
+
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" placeholder="Digite aqui">
+                    </fieldset>
+                </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>
+            &copy; Direitos reservados ao autor do site!!!
+        </p>
+    </footer>
+</body>
+
+</html>
