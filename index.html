@@ -36,21 +36,21 @@
     </header>
 
     <main>
-        <section class="sec">
-            <h2 id="hover">:hover</h2>                  <!--EXEMPLO HOVER-->
+        <section class="sec" id="hover">
+            <h2>:hover</h2>                  <!--EXEMPLO HOVER-->
                 
                 <p>
                     Vamos mostrar exemplos de <strong>:hover</strong> (passe o mouse por cima)
                 </p>
 
                     <div class="exemplo_hover">
-                        <img src="hover.jpeg" alt=""><br>
+                        <img src="assets/hover.jpeg" alt=""><br>
                         <a href="#">Passe o Mouse aqui!</a>
                     </div>
         </section>
 
-        <section class="sec">                                      <!--EXEMPLO FOCUS-->
-            <h2 id="focus">:focus</h2>
+        <section class="sec" id="focus">                                      <!--EXEMPLO FOCUS-->
+            <h2>:focus</h2>
 
                 <p>
                     Vamos mostrar exemplos de <strong>:focus</strong> (elemento selecionado)
@@ -65,8 +65,8 @@
                 </form>
         </section>
 
-        <section class="sec">                                      <!--EXEMPLO ACTIVE-->
-            <h2 id="active">:active</h2>
+        <section class="sec" id="active">                                      <!--EXEMPLO ACTIVE-->
+            <h2>:active</h2>
                 <p>
                     Vamos mostrar exemplo de <strong>:active</strong> (elemento sendo clicado)
                 </p>
@@ -74,14 +74,14 @@
                 <button type="button">Clique aqui!</button>
         </section>
         
-        <section class="child">                                     <!--EXEMPLO FIRST-CHILD | LAST-CHILD-->
-            <h2 id="first-child_last-child">:first-child | :last-child</h2>
+        <section class="child" id="first-child_last-child">                                     <!--EXEMPLO FIRST-CHILD | LAST-CHILD-->
+            <h2>:first-child | :last-child</h2>
 
                 <p>
                     Vamos mostrar exemplo de <strong>:first-child | :last-child</strong> (primeiro filho e ultimo filho)
                 </p>
                 
-                    <ul class="fist-last-child">
+                    <ul class="first-last-child">
                         <li>Primeiro</li>
                         <li>Meio</li>
                         <li>Meio</li>
@@ -89,13 +89,35 @@
                     </ul>
         </section>
         
-        <section class="child">                                   <!--EXEMPLO NTH-CHILD()-->
-            <h2 id="nth-child">:nth-child(odd) | nth-child(even) | nth-child(3n)</h2>
+        <section class="child" id="nth-child">                                   <!--EXEMPLO NTH-CHILD()-->
+            <h2>:nth-child(odd) | nth-child(even) | nth-child(3n)</h2>
                 <p>
                     Vamos mostrar todos os exemplos de <strong>:nth-child</strong>
                 </p>
 
-                    <ul class="nth-child">
+                    <ul class="nth-childodd">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
+                    <ul class="nth-childeven">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                    </ul>
+                    <ul class="nth-child3n">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -108,8 +130,8 @@
                     </ul>
         </section>
         
-        <section class="valid_invalid">                          <!--EXEMPLO VALID | INVALID-->
-            <h2 id="valid_invalid">:valid | :invalid</h2>
+        <section class="valid_invalid" id="valid_invalid">                          <!--EXEMPLO VALID | INVALID-->
+            <h2>:valid | :invalid</h2>
                 <p>
                     Vamos mostrar exemplos de <strong>:valid | :invalid</strong>
                 </p>
@@ -125,14 +147,15 @@
                                 name="nome" 
                                 id="nome" 
                                 placeholder="Digite aqui"
+                                required
                             ><br>
 
                             <label for="num">Contato</label><br>
                             <input 
-                                type="tel" 
+                                type="number" 
                                 name="numero" 
                                 id="num"
-                                placeholder="Digite aqui" 
+                                placeholder="9 12345678" 
                                 title="Digite no formato: +99 (99)9 9999-9999"
                                 pattern="0-9"
                                 maxlength="9"
@@ -140,7 +163,13 @@
                             ><br>
 
                             <label for="email">Email</label><br>
-                            <input type="email" name="email" id="email" placeholder="Digite aqui">
+                            <input 
+                                type="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder="Digite aqui"
+                                required
+                            >
                     </fieldset>
                 </form>
         </section>
@@ -153,6 +182,5 @@
         </p>
     </footer>
 </body>
-
 
 </html>
